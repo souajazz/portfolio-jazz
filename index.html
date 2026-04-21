@@ -525,7 +525,7 @@
     overflow:hidden;animation:popIn .3s ease;
   }
   @keyframes popIn{from{opacity:0;transform:scale(.9);}to{opacity:1;transform:scale(1);}}
-  .modal-thumb{aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;font-size:5rem;}
+  .modal-thumb{display:flex;align-items:center;justify-content:center;background:var(--cream-warm);max-height:70vh;overflow:hidden;}
   .modal-body{padding:1.4rem;}
   .modal-title{font-family:'Cormorant Garamond',serif;font-size:1.35rem;color:var(--text-dark);margin-bottom:4px;}
   .modal-meta{font-size:11px;color:var(--text-light);letter-spacing:1.5px;text-transform:uppercase;margin-bottom:.7rem;}
@@ -802,7 +802,7 @@
 <div class="modal-overlay" id="modal" onclick="closeModal(event)">
   <div class="modal-box">
     <div class="modal-thumb" id="modal-thumb" style="background:#f5ead5;padding:0;overflow:hidden;">
-      <img id="modal-img" src="" alt="" style="width:100%;height:100%;object-fit:cover;display:block;">
+      <img id="modal-img" src="" alt="" style="width:100%;max-height:70vh;object-fit:contain;display:block;">
     </div>
     <div class="modal-body">
       <div class="modal-title" id="modal-title"></div>
