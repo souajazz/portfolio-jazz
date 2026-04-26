@@ -41,7 +41,6 @@
     overflow-x: hidden;
   }
 
-  /* ── PAPER TEXTURE overlay ── */
   body::before {
     content:'';
     position:fixed; inset:0;
@@ -53,7 +52,6 @@
     pointer-events:none; z-index:0;
   }
 
-  /* ── FLOATING PETALS ── */
   .petal {
     position:fixed;
     border-radius:50% 50% 50% 0;
@@ -84,7 +82,6 @@
     100%{transform:translateY(110vh) rotate(420deg); opacity:0;}
   }
 
-  /* ── NAV ── */
   nav {
     position:fixed;top:0;left:0;right:0;height:var(--nav-h);
     background:rgba(250,246,238,0.93);
@@ -141,11 +138,9 @@
   }
   .mobile-menu a:hover{background:rgba(212,168,75,0.12);}
 
-  /* ── SECTIONS ── */
   section{display:none;position:relative;z-index:2;}
   section.active{display:block;}
 
-  /* ── HERO ── */
   #home{min-height:100vh;padding-top:var(--nav-h);display:flex;align-items:center;justify-content:center;}
 
   .hero-wrap{
@@ -230,7 +225,6 @@
   }
   .btn-ghost:hover{background:rgba(212,168,75,0.1);color:var(--text-dark);}
 
-  /* ── HERO VISUAL — 花 kanji orb ── */
   .hero-visual{display:flex;justify-content:center;align-items:center;animation:fadeUp .8s .18s ease both;}
 
   .hero-orb{position:relative;width:340px;height:340px;}
@@ -271,13 +265,11 @@
     animation:floatOrb ease-in-out infinite;
   }
   @keyframes floatOrb{0%,100%{transform:translateY(0);}50%{transform:translateY(-8px);}}
-  /* symmetric: top centered, right centered, bottom centered, left centered */
   .od-top   {top:4px;   left:calc(50% - 22px); border-color:rgba(212,168,75,0.5); animation-duration:3s;  animation-delay:0s;}
   .od-right {top:calc(50% - 22px); right:4px;  border-color:var(--sakura-dark);   animation-duration:3.5s;animation-delay:0.5s;}
   .od-bottom{bottom:4px;left:calc(50% - 22px); border-color:var(--lilac-dark);    animation-duration:4s;  animation-delay:1s;}
   .od-left  {top:calc(50% - 22px); left:4px;   border-color:var(--jade);          animation-duration:3.2s;animation-delay:0.8s;}
 
-  /* ── SECTION HEADER ── */
   .section-header{text-align:center;padding:5rem 5vw 2.5rem;}
   .section-label{
     font-family:'Noto Serif SC',serif;font-size:12px;
@@ -296,7 +288,6 @@
   .sdiv-dot{width:5px;height:5px;background:var(--gold);border-radius:50%;}
   .section-desc{font-size:14px;color:var(--text-light);max-width:460px;margin:0 auto;line-height:1.9;}
 
-  /* ── GALLERY ── */
   #gallery{padding-bottom:5rem;}
 
   .gallery-tabs{display:flex;justify-content:center;gap:8px;padding:0 5vw 2rem;flex-wrap:wrap;}
@@ -355,21 +346,8 @@
     margin-bottom:3px;display:flex;align-items:center;gap:5px;
   }
   .gcat-dot{width:4px;height:4px;border-radius:50%;background:currentColor;display:inline-block;}
-  .gcard-name{font-size:15px;font-weight:500;color:var(--text-dark);margin-bottom:3px;font-family:'Cormorant Garamond',serif;font-size:17px;}
-  .gcard-snip{font-size:12px;color:var(--text-light);line-height:1.6;}
+  .gcard-name{font-family:'Cormorant Garamond',serif;font-size:17px;font-weight:500;color:var(--text-dark);}
 
-  /* thumb gradients */
-  .tg-earth{background:linear-gradient(135deg,#f5ead5,#d4a848);}
-  .tg-pink {background:linear-gradient(135deg,#fce9e9,#f2b0b8);}
-  .tg-sky  {background:linear-gradient(135deg,#e8f2fa,#a8cce8);}
-  .tg-jade {background:linear-gradient(135deg,#dceee0,#90c898);}
-  .tg-lilac{background:linear-gradient(135deg,#ede8f8,#c0a0e0);}
-  .tg-moss {background:linear-gradient(135deg,#e8f0d8,#8fb878);}
-  .tg-dusk {background:linear-gradient(135deg,#f0e8f8,#c8a0d0);}
-  .tg-dawn {background:linear-gradient(135deg,#fce8d8,#e8a870);}
-  .tg-night{background:linear-gradient(135deg,#e0e8f8,#8090c8);}
-
-  /* ── ABOUT ── */
   #sobre{padding-bottom:5rem;}
 
   .about-wrap{
@@ -379,7 +357,6 @@
   .about-avatar-col{display:flex;justify-content:center;}
   .about-avatar-scene{position:relative;width:270px;height:300px;}
 
-  /* Ghibli-style portrait frame */
   .avatar-frame-outer{
     position:absolute;inset:0;
     border:2px solid rgba(212,168,75,0.35);
@@ -406,7 +383,6 @@
   }
   .avatar-deco{position:absolute;font-size:1.4rem;animation:float ease-in-out infinite;}
   @keyframes float{0%,100%{transform:translateY(0);}50%{transform:translateY(-8px);}}
-  /* symmetric pairs: top-right / bottom-left  and  top-left / bottom-right */
   .ad1{top:10px; right:10px; animation-duration:3s;  animation-delay:0s;}
   .ad2{bottom:10px;left:10px; animation-duration:3s;  animation-delay:0s;}
   .ad3{top:10px; left:10px;  animation-duration:3.6s;animation-delay:.8s;}
@@ -432,7 +408,6 @@
   .stat-num{font-family:'Cormorant Garamond',serif;font-size:2rem;color:#a0682a;line-height:1;margin-bottom:3px;}
   .stat-label{font-size:10px;color:var(--text-light);letter-spacing:1px;line-height:1.4;}
 
-  /* ── CONTACT ── */
   #contato{padding-bottom:6rem;}
   .contact-wrap{
     max-width:800px;margin:0 auto;padding:0 5vw;
@@ -465,33 +440,8 @@
     display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;
   }
   .si-pink{background:var(--sakura-light);}
-  .si-purple{background:var(--lilac);}
-  .si-blue{background:var(--sky-light);}
-  .si-jade{background:var(--jade-light);}
   .social-handle{font-size:11px;color:var(--text-light);}
 
-  .form-title{font-family:'Cormorant Garamond',serif;font-size:1.25rem;color:var(--text-dark);margin-bottom:.3rem;}
-  .form-subtitle{font-size:12px;color:var(--text-light);margin-bottom:1.4rem;line-height:1.7;}
-  .form-group{margin-bottom:13px;}
-  .form-label{display:block;font-size:10px;color:var(--text-light);letter-spacing:1.5px;margin-bottom:5px;text-transform:uppercase;}
-  .form-input,.form-textarea{
-    width:100%;background:var(--cream);
-    border:1.5px solid rgba(212,168,75,0.25);border-radius:11px;
-    padding:10px 13px;font-family:'Zen Maru Gothic',sans-serif;font-size:13px;
-    color:var(--text-dark);outline:none;transition:border-color .2s;resize:none;
-  }
-  .form-input:focus,.form-textarea:focus{border-color:var(--gold);background:var(--white);}
-  .form-textarea{min-height:88px;}
-  .form-submit{
-    width:100%;padding:12px;
-    background:linear-gradient(135deg,var(--amber),var(--gold));
-    color:var(--white);border:none;border-radius:28px;
-    font-family:'Zen Maru Gothic',sans-serif;font-size:14px;
-    cursor:pointer;transition:all .2s;margin-top:5px;
-  }
-  .form-submit:hover{opacity:.9;transform:translateY(-1px);}
-
-  /* ── FOOTER ── */
   footer{
     position:relative;z-index:2;
     background:var(--cream-warm);
@@ -510,7 +460,6 @@
   .footer-copy{font-size:11px;color:var(--text-light);}
   .footer-hearts{color:var(--gold);}
 
-  /* ── MODAL ── */
   .modal-overlay{
     display:none;position:fixed;inset:0;
     background:rgba(60,48,32,0.55);
@@ -528,8 +477,7 @@
   .modal-thumb{display:flex;align-items:center;justify-content:center;background:var(--cream-warm);max-height:70vh;overflow:hidden;}
   .modal-body{padding:1.4rem;}
   .modal-title{font-family:'Cormorant Garamond',serif;font-size:1.35rem;color:var(--text-dark);margin-bottom:4px;}
-  .modal-meta{font-size:11px;color:var(--text-light);letter-spacing:1.5px;text-transform:uppercase;margin-bottom:.7rem;}
-  .modal-desc{font-size:13px;color:var(--text-mid);line-height:1.85;}
+  .modal-meta{font-size:11px;color:var(--text-light);letter-spacing:1.5px;text-transform:uppercase;}
   .modal-close{
     display:block;width:100%;margin-top:1.1rem;padding:10px;
     border:1.5px solid rgba(212,168,75,0.4);border-radius:20px;
@@ -538,11 +486,9 @@
   }
   .modal-close:hover{background:rgba(212,168,75,0.1);}
 
-  /* ── RESPONSIVE ── */
   @media(max-width:768px){
     .nav-links{display:none;}.hamburger{display:flex;}
     .hero-wrap{grid-template-columns:1fr;gap:2rem;padding:2rem 5vw 3rem;text-align:center;}
-    .ghibli-scene{width:260px;height:290px;}
     .hero-desc{margin:0 auto 1.8rem;}
     .hero-tags{justify-content:center;}.hero-cta{justify-content:center;}
     .hero-visual{order:-1;}
@@ -560,7 +506,6 @@
 </head>
 <body>
 
-<!-- petals -->
 <div class="petal p1"></div><div class="petal p2"></div><div class="petal p3"></div>
 <div class="petal p4"></div><div class="petal p5"></div><div class="petal p6"></div>
 <div class="petal p7"></div><div class="petal p8"></div><div class="petal p9"></div>
@@ -568,12 +513,10 @@
 <div class="petal p13"></div><div class="petal p14"></div><div class="petal p15"></div>
 <div class="petal p16"></div>
 
-<!-- ──── NAV ──── -->
 <nav>
   <div class="nav-logo" onclick="showSection('home')" style="cursor:pointer">
     <div class="nav-logo-mark">
       <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <!-- cherry blossom: 5 petals + center -->
         <g transform="translate(13,13)">
           <ellipse cx="0" cy="-6" rx="3.5" ry="5.5" fill="#f2a0b0" transform="rotate(0)"/>
           <ellipse cx="0" cy="-6" rx="3.5" ry="5.5" fill="#f2a0b0" transform="rotate(72)"/>
@@ -607,9 +550,10 @@
   <a href="#" onclick="showSection('home');toggleMenu();return false">🌱 Início</a>
   <a href="#" onclick="showSection('gallery');toggleMenu();return false">🧵 Galeria</a>
   <a href="#" onclick="showSection('sobre');toggleMenu();return false">🌸 Sobre mim</a>
-  <a href="#" onclick="showSection('contato');toggleMenu();return false">✉️ Contato</a></div>
+  <a href="#" onclick="showSection('contato');toggleMenu();return false">✉️ Contato</a>
+</div>
 
-<!-- ──── HOME ──── -->
+<!-- HOME -->
 <section id="home" class="active">
   <div class="hero-wrap">
     <div class="hero-text">
@@ -664,7 +608,7 @@
   </div>
 </section>
 
-<!-- ──── GALLERY ──── -->
+<!-- GALLERY -->
 <section id="gallery">
   <div class="section-header">
     <span class="section-label">作品集 · portfólio da Jazz</span>
@@ -686,7 +630,7 @@
   <div class="gallery-grid" id="gallery-grid"></div>
 </section>
 
-<!-- ──── SOBRE ──── -->
+<!-- SOBRE -->
 <section id="sobre">
   <div class="section-header">
     <span class="section-label">关于我 · sobre a Jazz</span>
@@ -756,7 +700,7 @@
   </div>
 </section>
 
-<!-- ──── CONTATO ──── -->
+<!-- CONTATO -->
 <section id="contato">
   <div class="section-header">
     <span class="section-label">联系我 · fale com a Jazz</span>
@@ -789,7 +733,7 @@
   </div>
 </section>
 
-<!-- ──── FOOTER ──── -->
+<!-- FOOTER -->
 <footer>
   <div class="footer-name">Souajazz</div>
   <div class="footer-cn">手作り · 手工艺术 · ateliê da Jazz</div>
@@ -798,7 +742,7 @@
   </div>
 </footer>
 
-<!-- ──── MODAL ──── -->
+<!-- MODAL -->
 <div class="modal-overlay" id="modal" onclick="closeModal(event)">
   <div class="modal-box">
     <div class="modal-thumb" id="modal-thumb" style="background:#f5ead5;padding:0;overflow:hidden;">
@@ -807,14 +751,12 @@
     <div class="modal-body">
       <div class="modal-title" id="modal-title"></div>
       <div class="modal-meta" id="modal-meta"></div>
-      <div class="modal-desc" id="modal-desc"></div>
       <button class="modal-close" onclick="closeModalBtn()">Fechar ✕</button>
     </div>
   </div>
 </div>
 
 <script>
-/* ── CARDS — croche, feltro, ilustracao, outros ── */
 const CARDS = [
   /* CROCHÊ */
   {cat:'croche',label:'Crochê · Amigurumi',name:'Tubarão',img:'src/images/croche/croche_01.jpeg'},
@@ -881,7 +823,6 @@ function renderCards(filter) {
       <div class="gallery-info">
         <div class="gcard-cat"><span class="gcat-dot"></span>${card.label}</div>
         <div class="gcard-name">${card.name}</div>
-        <div class="gcard-snip">${card.desc.substring(0,65)}…</div>
       </div>`;
     el.onclick = () => openModal(card);
     grid.appendChild(el);
@@ -900,7 +841,6 @@ function openModal(card) {
   document.getElementById('modal-img').alt = card.name;
   document.getElementById('modal-title').textContent = card.name;
   document.getElementById('modal-meta').textContent = card.label;
-  document.getElementById('modal-desc').textContent = card.desc;
   document.getElementById('modal').classList.add('open');
 }
 function closeModal(e){ if(e.target.id==='modal') closeModalBtn(); }
@@ -919,12 +859,6 @@ function showSection(id) {
 
 function toggleMenu(){
   document.getElementById('mobile-menu').classList.toggle('open');
-}
-
-function submitForm(btn){
-  btn.textContent = '✅ Mensagem enviada! Obrigada ♡';
-  btn.style.background = 'linear-gradient(135deg,#90c880,#5a8c50)';
-  btn.disabled = true;
 }
 
 renderCards('all');
